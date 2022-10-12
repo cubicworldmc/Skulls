@@ -19,7 +19,7 @@
 package ca.tweetzy.skulls.database.migrations;
 
 
-import ca.tweetzy.feather.database.DataMigration;
+import ca.tweetzy.skulls.feather.database.DataMigration;
 
 import java.sql.Connection;
 import java.sql.SQLException;

@@ -18,10 +18,17 @@
 
 package ca.tweetzy.skulls;
 
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
 import lombok.NonNull;
 import lombok.experimental.UtilityClass;
+import org.bukkit.Color;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Date Created: April 28 2022
@@ -73,4 +80,34 @@ public final class PlayerInventoryHelper {
 			}
 		}
 	}
+
+	public int getMaterialsCountInPlayerInventory(@NonNull final Player player, Collection<CompMaterial> materials) {
+		int total = 0;
+		List<Material> bukkitMaterials = materials.stream().map(CompMaterial::parseMaterial).collect(Collectors.toList());
+		for (ItemStack item : player.getInventory().getContents()) {
+			if (item == null || !bukkitMaterials.contains(item.getType())) continue;
+			total += item.getAmount();
+		}
+		return total;
+	}
+
+	public void removeSpecificMaterialsQuantityFromPlayer(@NonNull final Player player, @NonNull final Collection<CompMaterial> materials, int amount) {
+		int i = amount;
+		List<Material> bukkitMaterials = materials.stream().map(CompMaterial::parseMaterial).collect(Collectors.toList());
+		for (int j = 0; j < player.getInventory().getSize(); j++) {
+			ItemStack item = player.getInventory().getItem(j);
+			if (item == null || !bukkitMaterials.contains(item.getType())) continue;
+
+			if (i >= item.getAmount()) {
+				player.getInventory().clear(j);
+				i -= item.getAmount();
+			} else if (i > 0) {
+				item.setAmount(item.getAmount() - i);
+				i = 0;
+			} else {
+				break;
+			}
+		}
+	}
+
 }

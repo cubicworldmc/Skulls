@@ -41,7 +41,7 @@ public final class Serialize {
 	}
 
 	public Location deserializeLocation(final String raw) {
-		final String[] split = raw.split(" ");
+		final String[] split = raw.replace(',', '.').split(" ");
 
 		return new Location(
 				Bukkit.getWorld(split[0]),

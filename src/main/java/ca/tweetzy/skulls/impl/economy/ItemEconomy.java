@@ -44,12 +44,13 @@ public final class ItemEconomy implements Economy {
 
 	@Override
 	public boolean has(@NonNull Player player, double amount) {
-		return PlayerInventoryHelper.getItemCountInPlayerInventory(player, Settings.ITEM_ECONOMY_ITEM.getMaterial().parseItem()) >= (int) amount;
+		return PlayerInventoryHelper.getMaterialsCountInPlayerInventory(player, Settings.ITEM_ECONOMY_ITEM.getMaterials()) >= (int) amount;
 	}
 
 	@Override
 	public void withdraw(@NonNull Player player, double amount) {
-		PlayerInventoryHelper.removeSpecificItemQuantityFromPlayer(player, Settings.ITEM_ECONOMY_ITEM.getMaterial().parseItem(), (int) amount);
+		PlayerInventoryHelper.removeSpecificMaterialsQuantityFromPlayer(player, Settings.ITEM_ECONOMY_ITEM.getMaterials(), (int) amount);
+
 	}
 
 	@Override

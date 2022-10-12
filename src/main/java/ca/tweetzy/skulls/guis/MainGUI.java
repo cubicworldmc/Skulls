@@ -18,12 +18,12 @@
 
 package ca.tweetzy.skulls.guis;
 
-import ca.tweetzy.feather.comp.enums.CompMaterial;
-import ca.tweetzy.feather.gui.template.BaseGUI;
-import ca.tweetzy.feather.utils.ChatUtil;
-import ca.tweetzy.feather.utils.Common;
-import ca.tweetzy.feather.utils.QuickItem;
-import ca.tweetzy.feather.utils.input.TitleInput;
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
+import ca.tweetzy.skulls.feather.gui.template.BaseGUI;
+import ca.tweetzy.skulls.feather.utils.ChatUtil;
+import ca.tweetzy.skulls.feather.utils.Common;
+import ca.tweetzy.skulls.feather.utils.QuickItem;
+import ca.tweetzy.skulls.feather.utils.input.TitleInput;
 import ca.tweetzy.skulls.SkullItem;
 import ca.tweetzy.skulls.Skulls;
 import ca.tweetzy.skulls.api.enums.BaseCategory;

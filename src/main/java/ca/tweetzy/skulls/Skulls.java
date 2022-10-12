@@ -18,17 +18,17 @@
 
 package ca.tweetzy.skulls;
 
-import ca.tweetzy.feather.FeatherCore;
-import ca.tweetzy.feather.FeatherPlugin;
-import ca.tweetzy.feather.command.CommandManager;
-import ca.tweetzy.feather.comp.enums.CompMaterial;
-import ca.tweetzy.feather.config.tweetzy.TweetzyYamlConfig;
-import ca.tweetzy.feather.database.DataMigrationManager;
-import ca.tweetzy.feather.database.DatabaseConnector;
-import ca.tweetzy.feather.database.SQLiteConnector;
-import ca.tweetzy.feather.files.file.YamlFile;
-import ca.tweetzy.feather.gui.GuiManager;
-import ca.tweetzy.feather.utils.Common;
+import ca.tweetzy.skulls.feather.FeatherCore;
+import ca.tweetzy.skulls.feather.FeatherPlugin;
+import ca.tweetzy.skulls.feather.command.CommandManager;
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
+import ca.tweetzy.skulls.feather.config.tweetzy.TweetzyYamlConfig;
+import ca.tweetzy.skulls.feather.database.DataMigrationManager;
+import ca.tweetzy.skulls.feather.database.DatabaseConnector;
+import ca.tweetzy.skulls.feather.database.SQLiteConnector;
+import ca.tweetzy.skulls.feather.files.file.YamlFile;
+import ca.tweetzy.skulls.feather.gui.GuiManager;
+import ca.tweetzy.skulls.feather.utils.Common;
 import ca.tweetzy.skulls.api.SkullsAPI;
 import ca.tweetzy.skulls.commands.*;
 import ca.tweetzy.skulls.database.DataManager;

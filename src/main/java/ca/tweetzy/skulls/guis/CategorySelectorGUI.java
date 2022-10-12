@@ -18,10 +18,10 @@
 
 package ca.tweetzy.skulls.guis;
 
-import ca.tweetzy.feather.comp.enums.CompMaterial;
-import ca.tweetzy.feather.gui.events.GuiClickEvent;
-import ca.tweetzy.feather.gui.template.PagedGUI;
-import ca.tweetzy.feather.utils.QuickItem;
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
+import ca.tweetzy.skulls.feather.gui.events.GuiClickEvent;
+import ca.tweetzy.skulls.feather.gui.template.PagedGUI;
+import ca.tweetzy.skulls.feather.utils.QuickItem;
 import ca.tweetzy.skulls.Skulls;
 import ca.tweetzy.skulls.api.interfaces.Category;
 import ca.tweetzy.skulls.settings.Translation;

@@ -18,9 +18,9 @@
 
 package ca.tweetzy.skulls.settings;
 
-import ca.tweetzy.feather.comp.enums.CompMaterial;
-import ca.tweetzy.feather.files.ConfigSetting;
-import ca.tweetzy.feather.files.file.YamlFile;
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
+import ca.tweetzy.skulls.feather.files.ConfigSetting;
+import ca.tweetzy.skulls.feather.files.file.YamlFile;
 import ca.tweetzy.skulls.Skulls;
 import lombok.SneakyThrows;
 

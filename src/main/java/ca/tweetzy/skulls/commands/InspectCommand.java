@@ -18,13 +18,13 @@
 
 package ca.tweetzy.skulls.commands;
 
-import ca.tweetzy.feather.command.AllowedExecutor;
-import ca.tweetzy.feather.command.Command;
-import ca.tweetzy.feather.command.ReturnType;
-import ca.tweetzy.feather.comp.NBTEditor;
-import ca.tweetzy.feather.comp.enums.CompMaterial;
-import ca.tweetzy.feather.utils.Common;
-import ca.tweetzy.feather.utils.PlayerUtil;
+import ca.tweetzy.skulls.feather.command.AllowedExecutor;
+import ca.tweetzy.skulls.feather.command.Command;
+import ca.tweetzy.skulls.feather.command.ReturnType;
+import ca.tweetzy.skulls.feather.comp.NBTEditor;
+import ca.tweetzy.skulls.feather.comp.enums.CompMaterial;
+import ca.tweetzy.skulls.feather.utils.Common;
+import ca.tweetzy.skulls.feather.utils.PlayerUtil;
 import ca.tweetzy.skulls.Skulls;
 import ca.tweetzy.skulls.api.interfaces.PlacedSkull;
 import ca.tweetzy.skulls.api.interfaces.Skull;
